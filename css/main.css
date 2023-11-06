@@ -1,0 +1,104 @@
+/***
+Colores
+color fondo: #FBEECA
+color negro: #241C15
+color primario: #007C89
+coloe secundario: #C5DBF2
+ */
+
+/*
+*Generales
+ */
+
+body {
+    background-color:#FBEECA;
+    font-family: Inter;
+    color: #241C15;
+}
+
+/*
+*Componentes
+ */
+.title {
+    font-family: "Inter Semi Bold";
+}
+.container {
+    margin-inline: auto;
+    padding: 1rem;
+    max-width: 1000px;
+}
+
+.ul-reset {
+    display: flex;
+    flex-wrap:wrap;
+    list-style: none;
+    padding: 0;
+}
+.image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 2rem;
+    font-size: 1rem;
+    background-color: #007C89;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #C5DBF2;
+    color: #241C15;
+}
+
+.button--transparent {
+    background-color: transparent;
+    color: #007C89;
+}
+.link {
+    color: #007C89;
+}
+
+/*
+*Pagina Inicio
+ */
+
+.hero {
+    padding-block: 3rem;
+}
+
+.hero__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:1rem;
+}
+
+@media (width < 600px) {
+    .hero__columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hero__title {
+    font-size: 3rem;
+}
+
+.hero__text {
+    font-size: 1.6rem;
+}
+
+.nav__ul {
+     gap: 2rem;
+}
+
+.news__text {
+    font-size: 0.8rem;
+}
+.news {
+    background-color: #C5DBF2
+}
